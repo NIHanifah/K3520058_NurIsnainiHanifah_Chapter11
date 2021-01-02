@@ -1,4 +1,7 @@
+#Mencari data peminjaman dari input data sebelumnay
+
 import datetime
+from datetime import timedelta
 
 tglSekarang = datetime.datetime.now().date()
 
@@ -18,6 +21,7 @@ for file in lineFile:
     dataKode += [b]
     a += 1
 
+#function untuk mengihitung selisih hari dan menampilkan besar denda
 def diffDate(x):
     tglSekarang = datetime.datetime.now()
     thn, bln, tgl = x.split('-')
@@ -66,6 +70,7 @@ def diffDate(x):
 
 
 b = 0
+#perulangan untuk mengecek data
 while b <= len(dataKode):
     data = lineFile[b].split('|')
     if inputData == dataKode[b]:  

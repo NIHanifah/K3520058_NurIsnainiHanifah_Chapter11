@@ -1,6 +1,9 @@
+#Menghitung selisih hari
+
 import datetime
 from datetime import timedelta
 
+#function untuk menghitung selisih hari
 def diffDate(x):
     tglSekarang = datetime.datetime.now()
     thn, bln, tgl = x.split('-')
